@@ -12,6 +12,11 @@ const Layout = ({ children }) => (
     <div className="container">
       {children}
     </div>
+
+    <footer className="mt-4 mx-4">
+      <p>2020, &copy; rowaxl</p>
+      <p>API powered by <a href="https://www.coindesk.com/" target="_blank">coindesk</a></p>
+    </footer>
   </div>
 )
 

@@ -12,7 +12,7 @@ const Index = ({ bpi, time }) => {
       <Prices bpi={bpi} />
 
       <div>
-        updated at: {new Date(time.updated).toLocaleString()}
+        updated at: {time.updated}
       </div>
     </Layout>
   )

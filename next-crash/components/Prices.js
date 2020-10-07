@@ -4,12 +4,12 @@ const Prices = ({ bpi }) => {
   const [currency, setCurrecy] = useState('USD')
 
   const renderCurrencyList = () => Object.keys(bpi).map(currency => (
-    <option value={currency}>{currency}</option>
+    <option key={currency} value={currency}>{currency}</option>
   ))
 
   return (
     <div>
-      <div class="form-group">
+      <div className="form-group">
         <select className="custom-select" onChange={e => setCurrecy(e.target.value)}>
           {renderCurrencyList()}
         </select>
