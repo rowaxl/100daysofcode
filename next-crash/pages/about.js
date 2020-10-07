@@ -1,11 +1,8 @@
-import Navbar from '../components/Navbar'
+import Layout from '../components/Layout'
 
-const About = () => (
-  <div>
-    <Navbar />
-
-    <h1>About this page</h1>
-  </div>
+const Index = () => (
+  <Layout>
+    <h1>About</h1>
+  </Layout>
 )
-
 export default About
