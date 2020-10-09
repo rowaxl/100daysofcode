@@ -50,13 +50,13 @@ export const getStaticPaths = async () => {
   }
 }
 
+// Ghost CMS Request
 export const getStaticProps = async ({ params }) => {
   const post = await getPost(params.slug)
 
   return {
-    props: {
-      post
-    }
+    revalidate: 10,
+    props: { post },
   }
 }
 
