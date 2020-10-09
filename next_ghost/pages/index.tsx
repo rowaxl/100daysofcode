@@ -6,8 +6,6 @@ import { Post } from '../interfaces'
 import { getPosts } from './api/post'
 
 const Home: FC<{ posts: Post[] }> = ({ posts }) => {
-  console.log(posts)
-
   return (
     <div className={styles.container}>
       <h2>Blaze Blog</h2>
